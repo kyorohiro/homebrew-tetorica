@@ -1,7 +1,7 @@
 class TetoricaMdrop < Formula
   desc "Local network file sharing server"
   homepage "https://github.com/kyorohiro/tetorica-mdrop"
-  version "0.5.3+4"
+  version "0.5.3+5"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
@@ -30,11 +30,7 @@ class TetoricaMdrop < Formula
       opt_bin/"tetorica-mdrop",
       var/"tetorica-mdrop/share",
       "--config",
-      etc/"tetorica-mdrop/config.toml",
-      "--hostname",
-      "mdrop.local",
-      "--port",
-      "7878"
+      etc/"tetorica-mdrop/config.toml"
     ]
     keep_alive true
     working_dir var/"tetorica-mdrop"
