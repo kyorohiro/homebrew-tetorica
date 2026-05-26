@@ -1,4 +1,4 @@
-class TetoricaMdropCli < Formula
+class TetoricaMdrop < Formula
   desc "Local network file sharing server"
   homepage "https://github.com/kyorohiro/tetorica-mdrop"
   version "0.5.2"
