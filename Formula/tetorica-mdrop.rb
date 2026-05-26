@@ -9,10 +9,14 @@ class TetoricaMdrop < Formula
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
     sha256 "868531c9372b36b6988494428d05009ce0753f74f680adcfb58ae536e8eba1cb"
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-linux-arm.tar.gz"
+    sha256 "81196d27ddbf4f9e1d76d817cd5f300e92c07c3766bcca34b921fbb4a90dcd47"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "PUT_SHA256_HERE"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-linux-x86.tar.gz"
+    sha256 "565ab8f53d12429786808b7c621df87a020b7df26a9466429fce827e292ebd30"
   end
+
 
   def install
     bin.install "tetorica-mdrop"
