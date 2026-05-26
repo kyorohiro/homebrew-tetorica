@@ -32,7 +32,7 @@ class TetoricaMdrop < Formula
       "--config",
       etc/"tetorica-mdrop/config.toml",
       "--hostname",
-      "0.0.0.0",
+      "mdrop.local",
       "--port",
       "7878"
     ]
