@@ -28,8 +28,9 @@ class TetoricaMdrop < Formula
   service do
     run [
       opt_bin/"tetorica-mdrop",
-      "serve",
       var/"tetorica-mdrop/share",
+      "--config",
+      etc/"tetorica-mdrop/config.toml",
       "--hostname",
       "0.0.0.0",
       "--port",
