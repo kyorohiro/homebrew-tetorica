@@ -4,11 +4,11 @@ class TetoricaMdrop < Formula
   version "0.5.2"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
-    sha256 "6c97a7e27cbd061999b9c6330e8e17e307e747f7cc337ec7ed62f5deab5c6c6c"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+1/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
+    sha256 "30fcf175addfab552ac810132ec3f963afa41297a2860d1ec0f09904154139c1"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
-    sha256 "868531c9372b36b6988494428d05009ce0753f74f680adcfb58ae536e8eba1cb"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+1/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
+    sha256 "23fbd76d4b5b06661e27403d7fd4d0c81829952bc426341b7dcf2519c9a6e91e"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-linux-arm.tar.gz"
     sha256 "81196d27ddbf4f9e1d76d817cd5f300e92c07c3766bcca34b921fbb4a90dcd47"
