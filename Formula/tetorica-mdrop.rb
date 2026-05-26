@@ -1,7 +1,7 @@
 class TetoricaMdrop < Formula
   desc "Local network file sharing server"
   homepage "https://github.com/kyorohiro/tetorica-mdrop"
-  version "0.5.2"
+  version "0.5.3"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+1/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
