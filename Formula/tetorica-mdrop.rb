@@ -1,7 +1,7 @@
 class TetoricaMdrop < Formula
   desc "Local network file sharing server"
   homepage "https://github.com/kyorohiro/tetorica-mdrop"
-  version "0.5.3+5"
+  version "0.5.3+6"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
@@ -17,18 +17,32 @@ class TetoricaMdrop < Formula
     sha256 "60e30e6bb4945c7805d9f6c8e79664e44b20a809ccbaf1f98ba19647600444e0"
   end
 
-
   def install
     bin.install "tetorica-mdrop"
 
     (var/"tetorica-mdrop/share").mkpath
+    (var/"tetorica-mdrop").mkpath
     (var/"log").mkpath
+    (etc/"tetorica-mdrop").mkpath
+
+    config = etc/"tetorica-mdrop/config.toml"
+    unless config.exist?
+      config.write <<~EOS
+        path = "#{var}/tetorica-mdrop/share"
+        hostname = "mdrop.local"
+        port = 7878
+        no_bonjour = false
+        local_only = true
+        is_https = false
+        id = ""
+        password = ""
+      EOS
+    end
   end
 
   service do
     run [
       opt_bin/"tetorica-mdrop",
-      var/"tetorica-mdrop/share",
       "--config",
       etc/"tetorica-mdrop/config.toml"
     ]
