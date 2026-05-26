@@ -21,12 +21,20 @@ class TetoricaMdrop < Formula
   def install
     bin.install "tetorica-mdrop"
 
-    (var/"tetorica-mdrop").mkpath
+    (var/"tetorica-mdrop/share").mkpath
     (var/"log").mkpath
   end
 
   service do
-    run [opt_bin/"tetorica-mdrop", "serve", var/"tetorica-mdrop", "--hostname", "0.0.0.0", "--port", "7878"]
+    run [
+      opt_bin/"tetorica-mdrop",
+      "serve",
+      var/"tetorica-mdrop/share",
+      "--hostname",
+      "0.0.0.0",
+      "--port",
+      "7878"
+    ]
     keep_alive true
     working_dir var/"tetorica-mdrop"
     log_path var/"log/tetorica-mdrop.log"
