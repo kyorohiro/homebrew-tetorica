@@ -1,0 +1,30 @@
+# Tetorica mDrop configuration file
+
+# Shared file or directory
+path = "/opt/homebrew/var/tetorica-mdrop/share"
+
+# Server bind hostname / address
+# Examples:
+# "0.0.0.0"     -> allow access from other devices
+# "127.0.0.1"   -> localhost only
+# "mdrop.local" -> Bonjour / mDNS hostname
+hostname = "0.0.0.0"
+
+# HTTP server port
+port = 7878
+
+# Disable Bonjour / mDNS advertisement
+no_bonjour = false
+
+# Allow only local network access
+local_only = true
+
+# Enable HTTPS mode
+# Usually disabled when using nginx reverse proxy
+is_https = false
+
+# Optional built-in authentication
+# Recommended only for simple local usage
+id = ""
+
+password = ""
