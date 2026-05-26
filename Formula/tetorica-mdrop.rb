@@ -8,7 +8,7 @@ class TetoricaMdrop < Formula
     sha256 "6c97a7e27cbd061999b9c6330e8e17e307e747f7cc337ec7ed62f5deab5c6c6c"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
-    sha256 "PUT_SHA256_HERE"
+    sha256 "376c0df25477bab9e3099c60a92f687612ffd437d3020b862a42a78ea533280b"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.2/tetorica-mdrop-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "PUT_SHA256_HERE"
