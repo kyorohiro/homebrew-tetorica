@@ -1,20 +1,20 @@
 class TetoricaMdrop < Formula
   desc "Local network file sharing server"
   homepage "https://github.com/kyorohiro/tetorica-mdrop"
-  version "0.5.12"
+  version "0.5.3+6"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.12/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
-    sha256 "4a8f1c0b6338a38d2fc7b6355f5d5c7a7d3c630a12d1cebf6be53183e294a57d"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-aarch64-apple-darwin.tar.gz"
+    sha256 "9b25133a10372200c889d7a2d9785b3ee2f7bb645a6a25c2c6b6774bc55b2651"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.12/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
-    sha256 "cee237d8d7ea831af4da7d5a33367cf2846c3f8069da73cebfc5d35fffca698b"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-x86_64-apple-darwin.tar.gz"
+    sha256 "376c0ea7c1a8e5d5adaff9fa4a6a2105e451d7de17dd7a46d4fd51ea23824e5f"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.12/tetorica-mdrop-linux-arm.tar.gz"
-    sha256 "a43576443db89d9cb5852bd8ce3b8a84d0173762e152349f9e2c8b0630282981"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-linux-arm.tar.gz"
+    sha256 "a8b93cdfc911e454801f1c9f320956d7a56d668a986a17eb45b9fbad1aa2ede6"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.12/tetorica-mdrop-linux-x86.tar.gz"
-    sha256 "40fd210c8447b2adef2c09d7d73b1d333fa583de8f987a076ac559f861814548"
+    url "https://github.com/kyorohiro/tetorica-mdrop/releases/download/v0.5.3+4/tetorica-mdrop-linux-x86.tar.gz"
+    sha256 "60e30e6bb4945c7805d9f6c8e79664e44b20a809ccbaf1f98ba19647600444e0"
   end
 
   def install
