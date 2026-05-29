@@ -5,10 +5,8 @@ path = "/opt/homebrew/var/tetorica-mdrop/share"
 
 # Server bind hostname / address
 # Examples:
-# "0.0.0.0"     -> allow access from other devices
-# "127.0.0.1"   -> localhost only
 # "mdrop.local" -> Bonjour / mDNS hostname
-hostname = "0.0.0.0"
+hostname = "mdrop.local"
 
 # HTTP server port
 port = 7878
